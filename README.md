@@ -4,7 +4,7 @@ description: This example demonstrates how to setup your own Smooch Alexa skill 
 layout: Doc
 -->
 
-# Serverless Smooch Alexa Skill Example
+# Smooch Alexa Skill
 
 This example demonstrates how to setup your own Smooch Alexa skill using AWS Lambdas. It allows Alexa users to send plain-text messages as Smooch appUser messages. It also provides subsequent appMaker messages as responses, if they are received within Alexa's response window. 
 
@@ -18,6 +18,8 @@ This example demonstrates how to setup your own Smooch Alexa skill using AWS Lam
 In the Alexa Developer Portal you can add your own skill. To do so you need to define the available intents and then connect them to a Lambda. You can update and define the Lambda with Serverless.
 
 ## Setup
+
+### Deploying to AWS Lambdas
 
 _In order to use this example you must have serverless on your machine, follow the instructions [here](https://github.com/serverless/serverless) to install it. If this is your first time using serverless, you will also need to [configure credentials for AWS](https://serverless.com/framework/docs/providers/aws/guide/credentials/) on your local machine._
 
@@ -67,6 +69,8 @@ functions:
 
 ```
 
+### Configuring the Alexa Skill
+
 Next we need to setup an Alexa skill. Once you've signed up for the Amazon Developer Platform visit [the Alexa developer console page](https://developer.amazon.com/edw/home.html). There you should see the following screen and click "Get Started" on "Alexa Skill Kit":
 
 ![Welcome](https://cloud.githubusercontent.com/assets/223045/21183285/8403b37c-c207-11e6-89c0-d36582010af8.png)
@@ -109,11 +113,15 @@ Fill in the Lambda ARN with the ARN value displayed in the [AWS lambda console](
 
 ![Configuration](https://cloud.githubusercontent.com/assets/223045/21183281/83f17086-c207-11e6-89b7-2f6d96ac559c.png)
 
+### Test
+
 Next up visit the test page, fill in the utterance and click on `Ask the-name-of-your-skill`.
 
 ![Test](https://cloud.githubusercontent.com/assets/223045/21185805/78c1df06-c212-11e6-9cf9-ce44edc30cdd.gif)
 
 You should have received a response containing the text of any appMaker message you've configured to respond, or `"text": "Haven't heard anything back. Try again later."` if no appMaker message was sent.
+
+## Tools and reference
 
 You can also test your skill using a service like [echosim.io](https://echosim.io/).
 
