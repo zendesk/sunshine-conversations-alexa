@@ -1,0 +1,25 @@
+service: smooch-alexa-skill
+
+frameworkVersion: ">=1.4.0 <2.0.0"
+
+plugins:
+  - serverless-plugin-optimize
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  timeout: 10
+  environment:
+    SMOOCH_TEST: 'test'
+
+functions:
+  smooch:
+    optimize:
+      debug: true
+      presets: ['es2017']
+    handler: handler.RawText
+    events:
+      - alexaSkill
