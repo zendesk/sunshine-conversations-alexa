@@ -113,7 +113,7 @@ Fill in the Lambda ARN with the ARN value displayed in the [AWS lambda console](
 
 ![Configuration](https://cloud.githubusercontent.com/assets/223045/21183281/83f17086-c207-11e6-89b7-2f6d96ac559c.png)
 
-### Test
+## Test
 
 Next up visit the test page, fill in the utterance and click on `Ask the-name-of-your-skill`.
 
