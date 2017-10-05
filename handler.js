@@ -3,11 +3,11 @@
 
 const Smooch = require('smooch-core');
 
-const appId = process.env.APP_ID || '591b60913884d169009e02de';
+const appId = process.env.APP_ID;
 
 const smooch = new Smooch({
-  keyId: process.env.KEY_ID || 'act_586fca99e1532b45008cbbf2',
-  secret: process.env.SECRET || '3GVUJ67voOxr1QH5p5_o_2tQ',
+  keyId: process.env.KEY_ID,
+  secret: process.env.SECRET,
   scope: 'account'
 });
 

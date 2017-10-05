@@ -13,7 +13,9 @@ provider:
   runtime: nodejs6.10
   timeout: 10
   environment:
-    SMOOCH_TEST: 'test'
+    APP_ID: 591b60913884d169009e02de
+    KEY_ID: act_586fca99e1532b45008cbbf2
+    SECRET: 3GVUJ67voOxr1QH5p5_o_2tQ
 
 functions:
   smooch:
